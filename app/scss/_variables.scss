@@ -1,0 +1,25 @@
+/******************************************************************
+** Variables **
+******************************************************************/
+
+$full-space: 40px;
+$half-space: 20px;
+
+$sans-serif: Karla, Helvetica, Arial, sans-serif;
+
+$black:  #333;
+$gray: #777;
+$light-gray: #f5f5f5;
+$white:  #fff;
+$light-yellow: #ffffcb;
+
+$vcu-yellow: #fcc100;
+$vcu-red: #ed2040;
+
+
+// used in normalize typography
+$background: $white;
+$text-color: $black;
+$link-color: skyblue;
+$link-hover: darken($link-color, 9%);
+$base-border-color: #ddd;

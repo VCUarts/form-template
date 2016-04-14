@@ -184,5 +184,5 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', ['browserSync','watch']);
 
     // cleans directories, does everything for css, js, and images for deploy
-    grunt.registerTask('build', ['includes', 'includes:build', 'sass', 'autoprefixer', 'cmq', 'cssmin', 'concat', 'uglify', 'copy']);
+    grunt.registerTask('build', ['includes', 'includes:build', 'sass', 'autoprefixer', 'cmq', 'concat', 'copy']);
 };

@@ -1,9 +1,5 @@
 /******************************************************************
-Site Name: 
-Author: 
-
-Stylesheet: Main Stylesheet
-
+** Stylesheet **
 ******************************************************************/
 
 @import "../bower_components/susy/sass/susy";
@@ -24,14 +20,13 @@ $susy: (
   ),
 );
 
-$wrapper-width: 1200px;
+$wrapper-width: 800px;
 
 @import "normalize";
-@import "colors";
+@import "variables";
 @import "mixins";
 @import "breakpoints";
 @import "base";
-@import "modules/modules";
 @import "print";
-@import "shame";
+@import "forms";
 
