@@ -3,35 +3,48 @@
 ******************************************************************/
 
 body {
-  font-family: $sans-serif;
-  font-size: 18px;
+  font-family: $depot-font;
+  font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   background: $light-gray;
+  transition: font-size 0.2s linear;
+
+  @include breakpoint(700px) {
+    font-size: 18px;
+  }
 
   ::selection {
     background: $light-yellow;
-  }
-
-  &.depot {
-    font-family: $depot-font;
   }
 }
 
 #main {
 	@include container($wrapper-width);
-	padding: $full-space;
+	padding: $half-space;
   margin-top: $full-space;
   background: $white;
   border-radius: 5px;
   box-shadow: 0px 0px 14px -2px rgba(0,0,0,0.06);
+  transition: padding 0.2s linear;
+
+  @include breakpoint(700px) {
+    padding: $full-space;
+  }
 }
 
 .logo {
   display: block;
   margin-bottom: 30px;
+  margin-bottom: 20px;
+  width: 100px;
+
+  @include breakpoint(700px) {
+    width: auto;
+    margin-bottom: 30px;
+  }
 }
 
 a {
@@ -49,15 +62,11 @@ a {
 h2 {
   margin: 0 0 $half-space 0;
   padding: 0;
-  font-size: 1.7em;
   font-weight: bold;
-
-  .depot & {
-    text-transform: uppercase;
-    font-size: 1.5em;
-    letter-spacing: 3px;
-    padding-top: $half-space;
-  }
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+  padding-top: $half-space;
 }
 
 h3 {
